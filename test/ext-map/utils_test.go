@@ -16,11 +16,11 @@ func TestStringMapContains(t *testing.T) {
 	Convey("StringMapContains should return true when val contain", t, func() {
 		var isContain bool
 
-		_, isContain = StringMapContains("]", config)
+		_, isContain = InMap("]", config)
 		So(isContain, ShouldBeTrue)
-		_, isContain = StringMapContains(")", config)
+		_, isContain = InMap(")", config)
 		So(isContain, ShouldBeTrue)
-		_, isContain = StringMapContains("}", config)
+		_, isContain = InMap("}", config)
 		So(isContain, ShouldBeTrue)
 	})
 }

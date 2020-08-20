@@ -5,7 +5,7 @@ package ext_map
 // @param map[string]string m
 // @return string the key of value
 // @return bool val is contains
-func StringMapContains(val string, m map[string]string) (string, bool) {
+func InMap(val string, m map[string]string) (string, bool) {
 	if m == nil {
 		return "", false
 	}
